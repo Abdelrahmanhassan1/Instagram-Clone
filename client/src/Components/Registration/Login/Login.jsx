@@ -27,7 +27,11 @@ function Login() {
           <LeftPart />
           <div>
             <div className={LoginStyle.rightPart}>
-              <img src={instagram} style={{ marginTop: "30px" }}></img>
+              <img
+                src={instagram}
+                style={{ marginTop: "30px" }}
+                alt="logo"
+              ></img>
               <form className={LoginStyle.form}>
                 <div className={LoginStyle.input_Btn_Container}>
                   <input
@@ -63,8 +67,8 @@ function Login() {
             </div>
 
             <div className={LoginStyle.rightPart4}>
-              <img src={AppStore} height="40px"></img>
-              <img src={GooglePlay} height="40px"></img>
+              <img src={AppStore} height="40px" alt="AppStore"></img>
+              <img src={GooglePlay} height="40px" alt="GooglePlay"></img>
             </div>
           </div>
         </div>

@@ -9,16 +9,12 @@ import img2 from "./images/img2.png";
 import img3 from "./images/img3.png";
 import img4 from "./images/img4.png";
 
-import { Callbacks } from "jquery";
-
 function LeftPart() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [img1, img2, img3, img4];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      console.log(currentIndex);
-
       if (currentIndex === images.length - 1) {
         setCurrentIndex(0);
       } else {
@@ -31,7 +27,7 @@ function LeftPart() {
 
   return (
     <div className={lpStyle.main}>
-      <img src={images[currentIndex]} />
+      <img src={images[currentIndex]} alt="switch image" />
     </div>
   );
 }
