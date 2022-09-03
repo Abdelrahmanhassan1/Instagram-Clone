@@ -47,38 +47,26 @@
   border-radius: 3px;
 }
 
-.spanContainer {
+.or {
   display: flex;
-  position: relative;
-  text-align: center;
-  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0px 18px;
 }
 
-.middleSpan {
-  color: rgba(var(--f52, 142, 142, 142), 1);
-  position: absolute;
-  right: 120px;
-  font-size: 0.8rem;
-  font-weight: 500;
+.or::before,
+.or::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #dbdbdb;
 }
-
-.leftSpan {
-  width: 102px;
-  height: 1px;
-  position: absolute;
-  top: 10px;
-  background-color: rgba(var(--f52, 142, 142, 142), 1);
-  opacity: 0.5;
-}
-.rightSpan {
-  width: 102px;
-  margin-left: 10px;
-  height: 1px;
-  position: absolute;
-  right: 0;
-  top: 10px;
-  background-color: rgba(var(--f52, 142, 142, 142), 1);
-  opacity: 0.5;
+.or_text {
+  margin: 0 18px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
 }
 
 .Login_With_Facebook {

@@ -40,10 +40,13 @@ function Login() {
                   ></input>
                   <input type="password" placeholder="Password"></input>
                   <button>Log In</button>
-                  <div className={LoginStyle.spanContainer}>
+                  {/* <div className={LoginStyle.spanContainer}>
                     <div className={LoginStyle.leftSpan}></div>
                     <div className={LoginStyle.middleSpan}>OR</div>
                     <div className={LoginStyle.rightSpan}></div>
+                  </div> */}
+                  <div className={LoginStyle.or}>
+                    <div className={LoginStyle.or_text}>OR</div>
                   </div>
                 </div>
               </form>
@@ -54,7 +57,7 @@ function Login() {
                 Log in with Facebook
               </button>
               <div className={LoginStyle.ForgotPassword}>
-                <a href="">Forgot password?</a>
+                <Link href="">Forgot password?</Link>
               </div>
             </div>
             <div className={LoginStyle.rightPart2}>
