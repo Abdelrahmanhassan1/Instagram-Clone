@@ -1,0 +1,14 @@
+.main {
+  background-image: url("./images/bg.png");
+  width: 424px;
+  height: 584px;
+  margin: 10px;
+  position: relative;
+}
+
+.main img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 18px 16px 0;
+}

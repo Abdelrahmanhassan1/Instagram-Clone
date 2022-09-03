@@ -1,0 +1,26 @@
+.main {
+  text-align: center;
+  /* display: flex; */
+}
+
+.form {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -200%);
+  padding: 10px;
+}
+.form label {
+  font-size: 1rem;
+}
+.form input {
+  /* height: 20px !important; */
+  /* border: none; */
+}
+
+.form input:focus {
+  outline: none;
+  border: 1px solid black !important;
+  box-shadow: none;
+}
