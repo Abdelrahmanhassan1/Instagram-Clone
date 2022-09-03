@@ -57,7 +57,7 @@ function Login() {
                 Log in with Facebook
               </button>
               <div className={LoginStyle.ForgotPassword}>
-                <Link href="">Forgot password?</Link>
+                <a href="">Forgot password?</a>
               </div>
             </div>
             <div className={LoginStyle.rightPart2}>
