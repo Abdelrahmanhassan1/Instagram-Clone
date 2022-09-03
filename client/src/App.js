@@ -7,7 +7,7 @@ import LeftPart from "./Components/Registration/Login/LeftPart";
 function App() {
   return (
     <div className="App">
-      <Login />
+      <LeftPart />
     </div>
   );
 }
