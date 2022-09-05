@@ -4,7 +4,9 @@ import "./App.css";
 import Login from "./Components/Registration/Login/Login";
 import SignUp from "./Components/Registration/SignUp/SignUp";
 
-import Stories from "./Components/Stories/Stories";
+// import Stories from "./Components/Stories/Stories";
+import StoriesBar from "./Components/Stories/StoriesBar";
+import ViewStory from "./Components/Stories/ViewStory";
 
 /* ============ import react router ================= */
 import { Routes, Route, Navigate } from "react-router-dom";
@@ -15,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="Stotries" element={<Stories />} />
+        <Route path="/stotries" element={<StoriesBar />} />
+        <Route path="/BigView" element={<ViewStory />} />
       </Routes>
     </div>
   );

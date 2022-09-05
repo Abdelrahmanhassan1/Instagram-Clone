@@ -1,0 +1,17 @@
+.container {
+  margin: 75px 320px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 15px;
+  width: 600px;
+}
+
+.storyContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 5rem;
+  /* grid-gap: 2rem; */
+}
