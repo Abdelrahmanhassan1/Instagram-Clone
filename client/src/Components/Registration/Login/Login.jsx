@@ -34,17 +34,28 @@ function Login() {
               ></img>
               <form className={LoginStyle.form}>
                 <div className={LoginStyle.input_Btn_Container}>
-                  <input
-                    type="text"
-                    placeholder="Phone number, username, or email"
-                  ></input>
-                  <input type="password" placeholder="Password"></input>
+                  <div className={LoginStyle.input}>
+                    <input id="email" type="text" placeholder=" "></input>
+                    <label htmlFor="email" className={LoginStyle.floatingLabel}>
+                      Phone number, username, or email
+                    </label>
+                  </div>
+                  <div className={LoginStyle.input}>
+                    <input
+                      id="password"
+                      type="password"
+                      placeholder=" "
+                    ></input>
+                    <label
+                      htmlFor="password"
+                      className={LoginStyle.floatingLabel}
+                    >
+                      password
+                    </label>
+                  </div>
+
                   <button>Log In</button>
-                  {/* <div className={LoginStyle.spanContainer}>
-                    <div className={LoginStyle.leftSpan}></div>
-                    <div className={LoginStyle.middleSpan}>OR</div>
-                    <div className={LoginStyle.rightSpan}></div>
-                  </div> */}
+
                   <div className={LoginStyle.or}>
                     <div className={LoginStyle.or_text}>OR</div>
                   </div>

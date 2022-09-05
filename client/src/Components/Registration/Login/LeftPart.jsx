@@ -9,6 +9,8 @@ import img2 from "./images/img2.png";
 import img3 from "./images/img3.png";
 import img4 from "./images/img4.png";
 
+import { CSSTransition } from "react-transition-group";
+
 function LeftPart() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [img1, img2, img3, img4];
@@ -27,7 +29,14 @@ function LeftPart() {
 
   return (
     <div className={lpStyle.main}>
-      <img src={images[currentIndex]} alt="switch image" />
+      <CSSTransition
+        in={false}
+        timeout={350}
+        // classNames="display"
+        // unmountOnExit
+      >
+        <img src={images[currentIndex]} alt="switch image" />
+      </CSSTransition>
     </div>
   );
 }
