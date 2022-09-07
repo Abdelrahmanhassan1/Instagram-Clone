@@ -76,3 +76,15 @@
   text-decoration: none;
   color: black;
 }
+
+.searchbox {
+  background-color: #efefef;
+  border-radius: 8px;
+  width: 268px;
+  height: 36px;
+  border: none;
+  padding: 10px;
+}
+.searchbox:focus {
+  outline: none;
+}

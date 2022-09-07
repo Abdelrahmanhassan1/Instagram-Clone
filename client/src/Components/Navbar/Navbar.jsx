@@ -21,6 +21,7 @@ import Following from "./assets/svgs/following.svg";
 import Favourites from "./assets/svgs/favourites.svg";
 
 function Navbar() {
+  // set SVGs of the left of NAVbar
   const [SVGIcons, setSVGIcons] = React.useState({
     home: Home,
     direct: Direct,
@@ -73,11 +74,17 @@ function Navbar() {
         </div>
       </div>
       {/* --------------------------------------------------- */}
+
       {/* search bar */}
       <div className={CSSModule.search_box}>
-        <input type="text" placeholder="Search" />
+        <input
+          type="text"
+          placeholder="Search"
+          className={CSSModule.searchbox}
+        />
       </div>
       {/* --------------------------------------------------- */}
+
       {/* navbar icons */}
       <div className={CSSModule.navbar_icons}>
         <button>
