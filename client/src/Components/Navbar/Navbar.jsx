@@ -53,7 +53,7 @@ function Navbar() {
               <a
                 class="dropdown-item"
                 className={CSSModule.arrow_icon}
-                href="https://www.instagram.com/"
+                href="http://localhost:3000/navbar"
               >
                 <img src={Following} alt="following icon" />
                 <span>Following</span>
@@ -63,7 +63,7 @@ function Navbar() {
               <a
                 class="dropdown-item"
                 className={CSSModule.arrow_icon}
-                href="https://www.instagram.com/"
+                href="http://localhost:3000/navbar"
               >
                 <img src={Favourites} alt="favourites icon" />
                 <span>Favourites</span>
