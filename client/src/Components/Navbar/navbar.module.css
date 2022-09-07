@@ -26,8 +26,10 @@
 .navbar_logo_arrow {
   position: absolute;
   color: black;
-  top: 20%;
+  top: -5%;
   right: -20%;
+  border: none;
+  background-color: transparent;
 }
 .navbar_logo img {
   width: 103px;
@@ -37,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 278px;
 }
 
 .navbar_icons button {
@@ -55,4 +58,21 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
+}
+
+.arrow_icon img {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+}
+.arrow_icon span {
+  font-size: 14px;
+}
+.arrow_icon span:hover {
+  color: black;
+}
+
+.arrow_icon {
+  text-decoration: none;
+  color: black;
 }

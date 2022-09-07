@@ -17,114 +17,155 @@ import NotificationFilled from "./assets/svgs/notification_filled.svg";
 import Add from "./assets/svgs/add.svg";
 import AddFilled from "./assets/svgs/add_filled.svg";
 import Arrow from "./assets/svgs/arrow.svg";
+import Following from "./assets/svgs/following.svg";
+import Favourites from "./assets/svgs/favourites.svg";
 
 function Navbar() {
+  const [SVGIcons, setSVGIcons] = React.useState({
+    home: Home,
+    direct: Direct,
+    explore: Explore,
+    notification: Notification,
+    add: Add,
+  });
+
   return (
     <div className={CSSModule.navbar}>
+      {/* logo and arrow down */}
       <div className={CSSModule.navbar_logo}>
         <img src={InstagramIMG} alt="instgram icon" />
-        <img
-          className={CSSModule.navbar_logo_arrow}
-          src={Arrow}
-          alt="arrow icon"
-          style={{ width: "12px", height: "12px", marginLeft: "8px" }}
-        />
+
+        <div className={CSSModule.navbar_logo_arrow}>
+          <button
+            style={{ border: "none", background: "none", outline: "none" }}
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src={Arrow}
+              alt="arrow icon"
+              style={{ width: "12px", height: "12px", marginLeft: "8px" }}
+            />
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="https://www.instagram.com/"
+              >
+                <img src={Following} alt="following icon" />
+                <span>Following</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="https://www.instagram.com/"
+              >
+                <img src={Favourites} alt="favourites icon" />
+                <span>Favourites</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+      {/* --------------------------------------------------- */}
+      {/* search bar */}
       <div className={CSSModule.search_box}>
         <input type="text" placeholder="Search" />
       </div>
+      {/* --------------------------------------------------- */}
+      {/* navbar icons */}
       <div className={CSSModule.navbar_icons}>
         <button>
           <img
             className={CSSModule.navbar_icon_img}
             alt="home icon"
-            src={Home}
-            onClick={(event) => {
+            src={SVGIcons.home}
+            onClick={() => {
               // toggle the icon and turn off the other icons
-              event.target.src = HomeFilled;
-              event.target.parentElement.nextElementSibling.children[0].src =
-                Direct;
-              event.target.parentElement.nextElementSibling.nextElementSibling.children[0].src =
-                Explore;
-              event.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[0].src =
-                Add;
-              event.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.children[0].src =
-                Notification;
+              setSVGIcons({
+                home: HomeFilled,
+                direct: Direct,
+                explore: Explore,
+                notification: Notification,
+                add: Add,
+              });
             }}
           />
         </button>
+
         <button>
           <img
             className={CSSModule.navbar_icon_img}
-            src={Direct}
+            src={SVGIcons.direct}
             alt="direct icon"
-            onClick={(event) => {
+            onClick={() => {
               // toggle the icon and turn off the other icons
-              event.target.src = DirectFilled;
-              event.target.parentElement.previousElementSibling.children[0].src =
-                Home;
-              event.target.parentElement.nextElementSibling.children[0].src =
-                Explore;
-              event.target.parentElement.nextElementSibling.nextElementSibling.children[0].src =
-                Add;
-              event.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[0].src =
-                Notification;
+              setSVGIcons({
+                home: Home,
+                direct: DirectFilled,
+                explore: Explore,
+                notification: Notification,
+                add: Add,
+              });
             }}
           />
         </button>
+
         <button>
           <img
             className={CSSModule.navbar_icon_img}
-            src={Explore}
+            src={SVGIcons.explore}
             alt="explore icon"
-            onClick={(event) => {
+            onClick={() => {
               // toggle the icon and turn off the other icons
-              event.target.src = ExploreFilled;
-              event.target.parentElement.previousElementSibling.previousElementSibling.children[0].src =
-                Home;
-              event.target.parentElement.previousElementSibling.children[0].src =
-                Direct;
-              event.target.parentElement.nextElementSibling.children[0].src =
-                Add;
-              event.target.parentElement.nextElementSibling.nextElementSibling.children[0].src =
-                Notification;
+              setSVGIcons({
+                home: Home,
+                direct: Direct,
+                explore: ExploreFilled,
+                notification: Notification,
+                add: Add,
+              });
             }}
           />
         </button>
+
         <button>
           <img
             className={CSSModule.navbar_icon_img}
-            src={Add}
+            src={SVGIcons.add}
             alt="add icon"
-            onClick={(event) => {
+            onClick={() => {
               // toggle the icon and turn off the other icons
-              event.target.src = AddFilled;
-              event.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.children[0].src =
-                Home;
-              event.target.parentElement.previousElementSibling.previousElementSibling.children[0].src =
-                Direct;
-              event.target.parentElement.previousElementSibling.children[0].src =
-                Explore;
-              event.target.parentElement.nextElementSibling.children[0].src =
-                Notification;
+              setSVGIcons({
+                home: Home,
+                direct: Direct,
+                explore: Explore,
+                notification: Notification,
+                add: AddFilled,
+              });
             }}
           />
         </button>
+
         <button>
           <img
             className={CSSModule.navbar_icon_img}
-            src={Notification}
+            src={SVGIcons.notification}
             alt="notification icon"
-            onClick={(event) => {
+            onClick={() => {
               // toggle the icon and turn off the other icons
-              event.target.src = NotificationFilled;
-              event.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.children[0].src =
-                Home;
-              event.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.children[0].src =
-                Direct;
-              event.target.parentElement.previousElementSibling.previousElementSibling.children[0].src =
-                Explore;
-              event.target.parentElement.children[0].src = Add;
+              setSVGIcons({
+                home: Home,
+                direct: Direct,
+                explore: Explore,
+                notification: NotificationFilled,
+                add: Add,
+              });
             }}
           />
         </button>
@@ -132,6 +173,7 @@ function Navbar() {
           <img src="https://picsum.photos/200" alt="profile" />
         </div>
       </div>
+      {/* --------------------------------------------------- */}
     </div>
   );
 }
