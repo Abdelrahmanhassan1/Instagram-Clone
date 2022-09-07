@@ -19,9 +19,26 @@
   width: 103px;
   height: 29px;
 }
+.navbar_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar_icons button {
   border: none;
   background-color: transparent;
   width: 25px;
   height: 25px;
+}
+
+.navbar_icon_img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar_icon_profile img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
