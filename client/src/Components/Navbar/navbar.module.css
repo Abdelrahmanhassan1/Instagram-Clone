@@ -14,6 +14,20 @@
   position: relative;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.navbar_logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar_logo_arrow {
+  position: absolute;
+  color: black;
+  top: 20%;
+  right: -20%;
 }
 .navbar_logo img {
   width: 103px;

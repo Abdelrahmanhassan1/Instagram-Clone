@@ -23,6 +23,12 @@ function Navbar() {
     <div className={CSSModule.navbar}>
       <div className={CSSModule.navbar_logo}>
         <img src={InstagramIMG} alt="instgram icon" />
+        <img
+          className={CSSModule.navbar_logo_arrow}
+          src={Arrow}
+          alt="arrow icon"
+          style={{ width: "12px", height: "12px", marginLeft: "8px" }}
+        />
       </div>
       <div className={CSSModule.search_box}>
         <input type="text" placeholder="Search" />
