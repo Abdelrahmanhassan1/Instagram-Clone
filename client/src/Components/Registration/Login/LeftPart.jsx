@@ -29,14 +29,7 @@ function LeftPart() {
 
   return (
     <div className={lpStyle.main}>
-      <CSSTransition
-        in={false}
-        timeout={350}
-        // classNames="display"
-        // unmountOnExit
-      >
-        <img src={images[currentIndex]} alt="switch image" />
-      </CSSTransition>
+      <img src={images[currentIndex]} alt="switch image" />
     </div>
   );
 }

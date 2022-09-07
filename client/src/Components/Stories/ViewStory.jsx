@@ -16,6 +16,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import instagram from "./images/instagram.png";
 
 function ViewStory() {
+  const HandleClk = () => {
+    window.open("stories", "_self");
+  };
   return (
     <div className={style_.main}>
       <div className={style_.instagram}>
@@ -23,7 +26,7 @@ function ViewStory() {
       </div>
 
       <div className={style_.closeBtn}>
-        <button>
+        <button onClick={HandleClk}>
           <FontAwesomeIcon icon={faXmark} />
         </button>
       </div>
