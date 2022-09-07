@@ -17,7 +17,7 @@ import instagram from "./images/instagram.png";
 
 function ViewStory() {
   const HandleClk = () => {
-    window.open("stories", "_self");
+    window.open("home", "_self");
   };
   return (
     <div className={style_.main}>

@@ -3,8 +3,8 @@ import "./App.css";
 //used components
 import Login from "./Components/Registration/Login/Login";
 import SignUp from "./Components/Registration/SignUp/SignUp";
-import Navbar from "./Components/Navbar/Navbar";
-// import Stories from "./Components/Stories/Stories";
+
+import Home from "./Components/Registration/Home/Home";
 import StoriesBar from "./Components/Stories/StoriesBar";
 import ViewStory from "./Components/Stories/ViewStory";
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/stories" element={<StoriesBar />} />
         <Route path="/BigView" element={<ViewStory />} />
-        <Route path="/navbar" element={<Navbar />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </div>
   );
