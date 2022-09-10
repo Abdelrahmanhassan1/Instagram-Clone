@@ -19,7 +19,12 @@ import AddFilled from "./assets/svgs/add_filled.svg";
 import Arrow from "./assets/svgs/arrow.svg";
 import Following from "./assets/svgs/following.svg";
 import Favourites from "./assets/svgs/favourites.svg";
+import Settings from "./assets/svgs/settings.svg";
+import Profile from "./assets/svgs/profile.svg";
+import Saved from "./assets/svgs/saved.svg";
+import SwitchAccount from "./assets/svgs/switchAccount.svg";
 
+// Main Function
 function Navbar() {
   // set SVGs of the left of NAVbar
   const [SVGIcons, setSVGIcons] = React.useState({
@@ -176,8 +181,69 @@ function Navbar() {
             }}
           />
         </button>
-        <div className={CSSModule.navbar_icon_profile}>
-          <img src="https://picsum.photos/200" alt="profile" />
+        <div className="profile">
+          <button
+            style={{ border: "none", background: "none", outline: "none" }}
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div className={CSSModule.navbar_icon_profile}>
+              <img src="https://picsum.photos/200" alt="profile" />
+            </div>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="http://localhost:3000/profile"
+              >
+                <img src={Profile} alt="profile icon" />
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="http://localhost:3000/profile"
+              >
+                <img src={Saved} alt="Saved icon" />
+                <span>Saved</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="http://localhost:3000/profile"
+              >
+                <img src={Settings} alt="Settings icon" />
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="http://localhost:3000/profile"
+              >
+                <img src={SwitchAccount} alt="SwitchAccount icon" />
+                <span>Switch accounts</span>
+              </a>
+            </li>
+            <hr></hr>
+            <li>
+              <a
+                class="dropdown-item"
+                className={CSSModule.arrow_icon}
+                href="http://localhost:3000/profile"
+              >
+                <span>Log out</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       {/* --------------------------------------------------- */}
