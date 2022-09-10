@@ -8,6 +8,7 @@ import Home from "./Components/Registration/Home/Home";
 import StoriesBar from "./Components/Stories/StoriesBar";
 import ViewStory from "./Components/Stories/ViewStory";
 
+import Profile from "./Components/Profile/Profile";
 /* ============ import react router ================= */
 import { Routes, Route, Navigate } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/stories" element={<StoriesBar />} />
         <Route path="/BigView" element={<ViewStory />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );

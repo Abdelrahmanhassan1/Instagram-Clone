@@ -1,6 +1,9 @@
 import React from "react";
-import CSSModule from "./SignUp.module.css";
+import CSSModule from "./Footer.module.css";
 export default function Footer() {
+  // function to get the current year
+  const year = new Date().getFullYear();
+
   return (
     <footer className={CSSModule.footer}>
       <div className={CSSModule.footer_links}>
@@ -23,7 +26,7 @@ export default function Footer() {
         </a>
       </div>
       <div className={CSSModule.footer_copyright}>
-        <p>© 2020 Instgram from Meta</p>
+        <p>© {year} Instgram from Meta</p>
       </div>
     </footer>
   );
