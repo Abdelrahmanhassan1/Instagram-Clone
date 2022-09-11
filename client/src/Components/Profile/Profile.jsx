@@ -51,7 +51,11 @@ export default function Profile() {
           </div>
         </div>
         <hr></hr>
-        <div className="profile-posts"></div>
+        <div className="profile_tabs">
+          <a>Posts</a>
+          <a>Saved</a>
+          <a>Tagged</a>
+        </div>
         <Footer />
       </div>
     </div>
