@@ -10,7 +10,7 @@ import LoginStyle from "./Login.module.css";
 
 //used components
 import LeftPart from "./LeftPart";
-
+import Footer from "../../Footer/Footer";
 // fontawesome imports
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -68,12 +68,13 @@ function Login() {
                 Log in with Facebook
               </button>
               <div className={LoginStyle.ForgotPassword}>
-                <a href="">Forgot password?</a>
+                <a href="http://localhost:3000/">Forgot password?</a>
               </div>
             </div>
             <div className={LoginStyle.rightPart2}>
               <p>
-                Don't have an account? <a href="">Sign up</a>
+                Don't have an account?{" "}
+                <a href="https://localhost:3000/">Sign up</a>
               </p>
             </div>
             <div className={LoginStyle.rightPart3}>
@@ -87,6 +88,8 @@ function Login() {
           </div>
         </div>
       </div>
+      <div style={{ minHeight: "100px" }}></div>
+      <Footer />
     </div>
   );
 }
