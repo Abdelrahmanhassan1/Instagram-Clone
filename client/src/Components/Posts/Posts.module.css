@@ -1,0 +1,52 @@
+.main {
+  width: 480px;
+  /* height: 80px; */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+.threeDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  height: 100%;
+}
+
+.story_circle {
+  background: linear-gradient(rgb(231, 0, 231), rgb(255, 155, 0));
+  width: 50px;
+  height: 50px;
+  margin: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotateZ(45deg);
+}
+
+.story_circle img {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transform: rotateZ(-45deg);
+}
+
+.style_postImg {
+  width: 100%;
+}

@@ -1,9 +1,10 @@
 .container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f9f9f9;
-  height: 20vh;
+  height: 20vh; */
+  margin: 25px 0 15px;
 }
 
 .horizontal_scroll {

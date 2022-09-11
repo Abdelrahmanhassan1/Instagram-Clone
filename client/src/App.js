@@ -5,7 +5,7 @@ import Login from "./Components/Registration/Login/Login";
 import SignUp from "./Components/Registration/SignUp/SignUp";
 
 import Home from "./Components/Registration/Home/Home";
-import StoriesBar from "./Components/Stories/StoriesBar";
+import Posts from "./Components/Posts/Posts";
 import ViewStory from "./Components/Stories/ViewStory";
 
 import Profile from "./Components/Profile/Profile";
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/stories" element={<StoriesBar />} />
+        <Route path="/posts" element={<Posts />} />
         <Route path="/BigView" element={<ViewStory />} />
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
