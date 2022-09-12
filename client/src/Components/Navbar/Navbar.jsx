@@ -131,24 +131,6 @@ function Navbar() {
         <button>
           <img
             className={CSSModule.navbar_icon_img}
-            src={SVGIcons.explore}
-            alt="explore icon"
-            onClick={() => {
-              // toggle the icon and turn off the other icons
-              setSVGIcons({
-                home: Home,
-                direct: Direct,
-                explore: ExploreFilled,
-                notification: Notification,
-                add: Add,
-              });
-            }}
-          />
-        </button>
-
-        <button>
-          <img
-            className={CSSModule.navbar_icon_img}
             src={SVGIcons.add}
             alt="add icon"
             onClick={() => {
@@ -159,6 +141,24 @@ function Navbar() {
                 explore: Explore,
                 notification: Notification,
                 add: AddFilled,
+              });
+            }}
+          />
+        </button>
+
+        <button>
+          <img
+            className={CSSModule.navbar_icon_img}
+            src={SVGIcons.explore}
+            alt="explore icon"
+            onClick={() => {
+              // toggle the icon and turn off the other icons
+              setSVGIcons({
+                home: Home,
+                direct: Direct,
+                explore: ExploreFilled,
+                notification: Notification,
+                add: Add,
               });
             }}
           />
@@ -181,6 +181,7 @@ function Navbar() {
             }}
           />
         </button>
+
         <div className="profile">
           <button
             style={{ border: "none", background: "none", outline: "none" }}

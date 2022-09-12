@@ -18,9 +18,20 @@
 }
 
 .navbar_logo {
+  position: absolute;
+  left: 23%;
+}
+.search_box {
+  position: absolute;
+  left: 41%;
+}
+.navbar_icons {
+  position: absolute;
+  left: 60%;
+}
+.navbar_logo {
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .navbar_logo_arrow {
@@ -39,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 278px;
+  width: 270px;
 }
 
 .navbar_icons button {

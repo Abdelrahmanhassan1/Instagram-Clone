@@ -16,7 +16,7 @@ export default function Profile() {
           <div className={CSSModule.profile_data}>
             <div className={CSSModule.profile_data_header}>
               <h1 className={CSSModule.name}>abdelrahmanH</h1>
-              <button style={{ border: "1px solid black" }}>
+              <button style={{ border: "1px solid #DBDBDB" }}>
                 Edit profile
               </button>
               <button>
