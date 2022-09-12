@@ -13,6 +13,9 @@ import style_ from "./StoriesBar.module.css";
 //img
 import img from "./images/joe.jpg";
 
+//nagigation
+import { Link } from "react-router-dom";
+
 function StoriesBar() {
   const [toLeft, setToLeft] = useState(0);
   const [sCount, setSCount] = useState(0);
@@ -80,188 +83,188 @@ function StoriesBar() {
             className={style_.storys_container}
             style={{ left: `${toLeft}px` }}
           >
-            <a href="/BigView">
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img src={img} alt=""></img>
               </div>
-            </a>
+            </Link>
 
-            <a href="/BigView">
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/11.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/12.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/13.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/15.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/16.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/17.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/18.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/19.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/20.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/21.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/22.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/23.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/24.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/25.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/26.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/27.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/28.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/29.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/30.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/31.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/32.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
-            <a href="/BigView">
+            </Link>
+            <Link to="/BigView">
               <div className={style_.story_circle}>
                 <img
                   src="https://randomuser.me/api/portraits/women/18.jpg"
                   alt=""
                 ></img>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

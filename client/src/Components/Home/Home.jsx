@@ -4,15 +4,21 @@ import React from "react";
 import style_ from "./Home.module.css";
 
 //used component
-import Navbar from "../../Navbar/Navbar";
-import StoriesBar from "../../Stories/StoriesBar";
-import Posts from "../../Posts/Posts";
+import Navbar from "../Navbar/Navbar";
+import StoriesBar from "../Stories/StoriesBar";
+import Posts from "../Posts/Posts";
 
 function Home() {
   return (
     <div className={style_.main}>
       <Navbar />
       <StoriesBar />
+      <Posts />
+      <Posts />
+      <Posts />
+      <Posts />
+      <Posts />
+      <Posts />
       <Posts />
     </div>
   );

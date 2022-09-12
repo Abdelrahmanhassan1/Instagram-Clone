@@ -9,16 +9,16 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+//navigation
+import { Link } from "react-router-dom";
 
 // images
 import instagram from "./images/instagram.png";
 
+//main function
 function ViewStory() {
-  const HandleClk = () => {
-    window.open("home", "_self");
-  };
   return (
     <div className={style_.main}>
       <div className={style_.instagram}>
@@ -26,9 +26,9 @@ function ViewStory() {
       </div>
 
       <div className={style_.closeBtn}>
-        <button onClick={HandleClk}>
+        <Link to="/home">
           <FontAwesomeIcon icon={faXmark} />
-        </button>
+        </Link>
       </div>
 
       <div className={style_.storiesContainer}>

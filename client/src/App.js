@@ -4,7 +4,7 @@ import "./App.css";
 import Login from "./Components/Registration/Login/Login";
 import SignUp from "./Components/Registration/SignUp/SignUp";
 
-import Home from "./Components/Registration/Home/Home";
+import Home from "./Components/Home/Home";
 import Posts from "./Components/Posts/Posts";
 import ViewStory from "./Components/Stories/ViewStory";
 
