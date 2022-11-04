@@ -1,4 +1,4 @@
-i# Instagram-Clone
+# Instagram-Clone
 
 Cloning instagram application using MERN Stack.
 
