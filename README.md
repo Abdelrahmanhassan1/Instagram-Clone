@@ -8,12 +8,12 @@ Cloning instagram application using MERN Stack.
 
 > Sign Up Page
 
-<img src="./ScreenShots/sign up page.png" ></img>
+<img src="./ScreenShots/sign-up-page.png" ></img>
 
 > Sign In Page
 
-<img src="./ScreenShots/sign in page.png" ></img>
+<img src="./ScreenShots/sign-in-page.png" ></img>
 
 > Profile Page
 
-<img src="./ScreenShots/profile page.png" ></img>
+<img src="./ScreenShots/profile-page.png" ></img>
